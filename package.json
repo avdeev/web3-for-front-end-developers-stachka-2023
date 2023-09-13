@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@shower/core": "^3.3.0",
-    "@shower/ribbon": "^3.5.0"
+    "@shower/ribbon": "^3.5.0",
+    "web3": "^4.0.3"
   }
 }
