@@ -3,6 +3,8 @@
 <!-- https://towardsdatascience.com/decoding-ethereum-smart-contract-data-eed513a65f76 -->
 <!-- https://github.com/web3ui/web3uikit -->
 <!-- https://moralis.io/dapp-development-tutorial-full-guide-to-building-a-dapp/ -->
+<!-- https://docs.unstoppabledomains.com/d-websites/dwebsite-examples/ -->
+<!-- https://viewblock.io/unstoppable -->
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -33,32 +35,43 @@
       }
 
       .progress::before {
-        background-color: #ff0000;
+        background-color: #e40100;
       }
 
       .slide {
         padding-top: 51px;
-        background-image: url("pictures/codefest.png");
-        background-repeat: no-repeat;
-        background-size: 80px;
-        background-position: calc(100% - 80px) 30px;
+        background-image: url("pictures/nastachku-2023-logo.png"), url("pictures/slide-cover.png");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 40px, 100%;
+        background-position: 130px calc(100% - 32px), center;
       }
 
       .slide.clear {
         background-image: none;
       }
 
+      .slide::before {
+        position: absolute;
+        content: "X";
+        bottom: 25px;
+        left: 104px;
+      }
+
+      .slide.clear::before {
+        content: "";
+      }
+
       .slide::after {
-        top: 45px;
-        bottom: auto;
+        top: auto;
+        bottom: 10px;
         left: auto;
         right: 30px;
         background: none;
-        color: #000;
+        color: #1a1a1a;
       }
 
       .slide h2 {
-        color: #000;
+        color: #1a1a1a;
         font-size: 60px;
       }
 
@@ -69,12 +82,16 @@
         width: 80%;
       }
 
+      .slide h2.shout.elevated {
+        margin-top: -35px;
+      }
+
       .slide h2.shout.small {
         font-size: 3.5em;
       }
 
       .slide .brand {
-        color: #ff0000;
+        color: #e40100;
       }
 
       .slide ol,
@@ -123,6 +140,10 @@
       </p>
     </header>
 
+    <section class="slide clear">
+      <img class="cover w" src="pictures/first-slide-nastachku.png" alt="" />
+    </section>
+
     <section class="slide clear" id="cover">
       <div style="width: 640px; padding-top: 30px; margin-left: 30px">
         <h2>Web3 для фронтендера</h2>
@@ -136,20 +157,18 @@
           --slide-side: 60px;
         }
         #cover {
-          background-image: url("pictures/codefest.png");
-          background-repeat: no-repeat;
-          background-size: 180px;
-          background-position: calc(100% - 80px) 30px;
+          background: #fff url("pictures/title-cover.png") no-repeat center center;
+          background-size: contain;
         }
         #cover h2 {
           margin: 0;
           color: #000;
-          font-size: 100px;
+          font-size: 62px;
         }
         #cover p {
           margin: 18px 0 0;
           color: #000;
-          font-size: 34px;
+          font-size: 24px;
         }
         #cover p a {
           color: #000;
@@ -214,45 +233,6 @@
       <img class="cover h" src="pictures/futureinternet-04-00852-g001.webp" alt="" />
     </section>
 
-    <section class="slide">
-      <h2 class="shout brand">Уже было</h2>
-    </section>
-
-    <section class="slide">
-      <h2>HTML</h2>
-      <ul>
-        <li class="next">HTML</li>
-        <li class="next">HTML 2.0</li>
-        <li class="next">HTML 3.0</li>
-        <li class="next">HTML 4</li>
-        <li class="next">HTML 5</li>
-        <li class="next"><b>HTML Living Standard</b></li>
-      </ul>
-    </section>
-
-    <section class="slide">
-      <img class="cover h" src="pictures/html_living_standart.png" alt="" />
-    </section>
-
-    <section class="slide">
-      <h2>CSS</h2>
-      <ul>
-        <li class="next">CSS 1</li>
-        <li class="next">CSS 2</li>
-        <li class="next">CSS 2.1</li>
-        <li class="next">CSS 3</li>
-        <li class="next"><b>CSS Living Standard</b></li>
-      </ul>
-    </section>
-
-    <section class="slide">
-      <img class="cover h" src="pictures/css.png" alt="" />
-    </section>
-
-    <section class="slide">
-      <h2 class="shout brand">&nbsp;Интернет&nbsp;— живой стандарт</h2>
-    </section>
-
     <!-- https://github.com/JoinColony/awesome-web3 -->
     <!-- https://github.com/ahmet/awesome-web3 -->
     <section class="slide">
@@ -279,6 +259,48 @@
     </section>
 
     <section class="slide">
+      <h2>Разница</h2>
+      <ul>
+        <li style="font-size: 1.5em">Web1: чтение</li>
+        <li class="next" style="font-size: 1.5em">Web2: чтение и публикация</li>
+        <li class="next" style="font-size: 1.5em">Web3: чтение, публикация и <b>владение</b></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/connect-wallet.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/sing_in_buttons.png" alt="" />
+    </section>
+
+    <!-- https://shardeum.org/blog/what-are-decentralized-applications/#What_are_the_Key_Advantages_of_DApps_over_Traditional_Apps -->
+    <section class="slide">
+      <h2 class="shout brand">Преимущества Web3</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Децентрализация</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/centralized.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Не регулируется</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Платежи встроены</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Не требует доверия</h2>
+    </section>
+
+    <section class="slide">
       <h2 class="shout brand small">
         Децентрализованное приложение<br /><span style="font-size: 0.7em">(DApps, dApp)</span>
       </h2>
@@ -289,11 +311,16 @@
     </section>
 
     <section class="slide clear">
-      <img class="cover h" src="pictures/centralized.jpg" alt="" />
+      <img
+        class="cover w"
+        src="pictures/1024px-U_(micro)_Torrent_logo.svg.png"
+        alt=""
+        style="width: 70%"
+      />
     </section>
 
     <section class="slide">
-      <h2 class="shout">Примеры</h2>
+      <h2 class="shout">Примеры dApps</h2>
     </section>
 
     <section class="slide">
@@ -317,10 +344,6 @@
       <img class="cover w" src="pictures/trustwallet.png" alt="" />
     </section>
 
-    <section class="slide clear">
-      <img class="cover h" src="pictures/google_chrome.png" alt="" style="height: 90%" />
-    </section>
-
     <section class="slide">
       <h2 class="shout">Криптовалютные биржи</h2>
     </section>
@@ -329,20 +352,16 @@
       <img class="cover w" src="pictures/uniswap.png" alt="" />
     </section>
 
-    <section class="slide clear">
-      <img class="cover w" src="pictures/1inch.png" alt="" />
-    </section>
-
     <section class="slide">
       <h2 class="shout">Игры</h2>
     </section>
 
     <section class="slide clear">
-      <img class="cover w" src="pictures/axie.png" alt="" />
+      <img class="cover w" src="pictures/cryptokitties.png" alt="" />
     </section>
 
     <section class="slide clear">
-      <img class="cover w" src="pictures/cryptokitties.png" alt="" />
+      <img class="cover h" src="pictures/kitties.png" alt="" />
     </section>
 
     <section class="slide">
@@ -353,10 +372,6 @@
       <img class="cover w" src="pictures/steemit.png" alt="" />
     </section>
 
-    <section class="slide clear">
-      <img class="cover w" src="pictures/minds.png" alt="" />
-    </section>
-
     <section class="slide">
       <h2 class="shout small">Децентрализованные финансы (DeFi)</h2>
     </section>
@@ -365,28 +380,12 @@
       <img class="cover w" src="pictures/aave.png" alt="" />
     </section>
 
-    <section class="slide clear">
-      <img class="cover w" src="pictures/compound.png" alt="" />
-    </section>
-
     <section class="slide">
       <h2 class="shout">Идентификация</h2>
     </section>
 
     <section class="slide clear">
-      <img class="cover h" src="pictures/ens.png" alt="" />
-    </section>
-
-    <section class="slide clear">
       <img class="cover h" src="pictures/unstopable.png" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/serto.png" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/civic.png" alt="" />
     </section>
 
     <section class="slide">
@@ -397,24 +396,12 @@
       <img class="cover h" src="pictures/etherscan.png" alt="" />
     </section>
 
-    <section class="slide clear">
-      <img class="cover h" src="pictures/polygonscan.png" alt="" />
-    </section>
-
     <section class="slide">
       <h2 class="shout small">Коллекционирование</h2>
     </section>
 
     <section class="slide clear">
       <img class="cover h" src="pictures/rarible.png" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/opensea.png" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/0xmint.png" alt="" />
     </section>
 
     <section class="slide">
@@ -427,27 +414,6 @@
 
     <section class="slide clear" style="background-color: #060606">
       <img class="cover h" src="pictures/vknft1.jpg" alt="" />
-    </section>
-
-    <!-- https://shardeum.org/blog/what-are-decentralized-applications/#What_are_the_Key_Advantages_of_DApps_over_Traditional_Apps -->
-    <section class="slide">
-      <h2 class="shout brand">Преимущества</h2>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Открытый исходный код</h2>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Прозрачность</h2>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Нулевое время простоя</h2>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Сопротивление цензуре</h2>
     </section>
 
     <section class="slide">
@@ -471,16 +437,14 @@
       <h2 class="shout brand">Хранилище ➡️<br />Блокчейн</h2>
     </section>
 
-    <!-- TODO: перенести -->
-    <section class="slide clear">
+    <!-- <section class="slide clear">
       <img class="cover h" src="pictures/erachain.png" alt="" />
-    </section>
+    </section> -->
 
     <section class="slide clear">
       <img class="cover h" src="pictures/What-Is-Blockchain-Infographic.jpg" alt="" />
     </section>
 
-    <!-- TODO: не читается -->
     <section class="slide clear">
       <img class="cover w" src="pictures/blockchains.avif" alt="" />
     </section>
@@ -516,6 +480,16 @@
     </section>
 
     <section class="slide">
+      <h2 class="shout">
+        <a
+          href="https://etherscan.io/address/0xb1690C08E213a35Ed9bAb7B318DE14420FB57d8C"
+          target="_blank"
+          >Демо</a
+        >
+      </h2>
+    </section>
+
+    <section class="slide">
       <h2 class="shout brand">🆕 Node Provider</h2>
     </section>
 
@@ -546,10 +520,6 @@
       <h2 class="shout brand">Фронтенд</h2>
     </section>
 
-    <section class="slide clear">
-      <img class="cover h" src="pictures/ethers.js-vs-web3.js_.jpg" alt="" />
-    </section>
-
     <section class="slide">
       <h2>Ethereum Provider</h2>
       <ul>
@@ -563,7 +533,66 @@
     </section>
 
     <section class="slide clear">
+      <img class="cover h" src="pictures/ethers.js-vs-web3.js_.jpg" alt="" />
+    </section>
+
+    <section class="slide clear">
       <img class="cover h" src="pictures/web3js.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Connect wallet</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Connect wallet (1)</h2>
+      <pre>
+        <code>&lt;script <mark>src=&quot;https://.../web3.min.js&quot;</mark>&gt;&lt;/script&gt;</code>
+        <code>&lt;input</code>
+        <code>  type=&quot;button&quot;</code>
+        <code>  value=&quot;Connect Wallet&quot;</code>
+        <code>  onclick=&quot;<mark>connect();</mark>&quot;</code>
+        <code>&gt;</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Connect wallet (2)</h2>
+      <pre>
+        <code>async function connect() {</code>
+        <code>  if (!window.ethereum) return;</code>
+        <code>  <mark>await window.ethereum.request({ method: "eth_requestAccounts" });</mark></code>
+        <code>  window.web3 = new Web3(window.ethereum);</code>
+        <code>  console.log(`Wallet: ${web3.eth.currentProvider.selectedAddress}`);</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Полезные утилиты</h2>
+      <pre>
+        <code><mark>Web3.utils.sha3("example")</mark></code>
+        <code>// '0x6fd43e7cffc31bb581d7421c8698e29aa2bd8e7186a394b85299908b4eb9b175'</code>
+        <code> </code>
+        <code><mark>Web3.utils.toWei('1', 'ether')</mark> // 1000000000000000000</code>
+        <code><mark>Web3.utils.toWei('1', 'gwei')</mark> // 1000000000</code>
+        <code> </code>
+        <code><mark>Web3.utils.padLeft('0x3456ff', 20);</mark> // '0x000000000000003456ff'</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Читаем данные из блокчейна</h2>
+      <pre>
+        <code>import Web3 from 'web3'</code>
+        <code>const web3 = new Web3(<mark>"https://mainnet.infura.io/v3/&lt;API-KEY&gt;"</mark>)</code>
+        <code> </code>
+        <code><mark>web3.eth.getBalance("0x1b3cB81E51011...")</mark>.then(console.log)</code>
+        <code>// result: BigInt(560000000065000000000000)</code>
+        <code> </code>
+        <code><mark>web3.eth.getBlockNumber()</mark>.then(console.log)</code>
+        <code>// result: BigInt(13497160)</code>
+      </pre>
     </section>
 
     <section class="slide">
@@ -590,69 +619,6 @@
         <code> </code>
         <code><mark>const subscription = await contract.events.VALUE_CHANGE();</mark></code>
         <code><mark>subscription.on("data", console.log);</mark></code>
-      </pre>
-    </section>
-
-    <section class="slide">
-      <h2>Читаем данные из блокчейна</h2>
-      <pre>
-        <code>import Web3 from 'web3'</code>
-        <code>const web3 = new Web3(<mark>"https://mainnet.infura.io/v3/endpoint"</mark>)</code>
-        <code> </code>
-        <code><mark>web3.eth.getBalance("0x1b3cB81E51011...")</mark>.then(console.log)</code>
-        <code>// result: BigInt(560000000065000000000000)</code>
-        <code> </code>
-        <code><mark>web3.eth.getBlockNumber()</mark>.then(console.log)</code>
-        <code>// result: BigInt(13497160)</code>
-      </pre>
-    </section>
-
-    <section class="slide">
-      <h2>Полезные утилиты</h2>
-      <pre>
-        <code><mark>Web3.utils.sha3("example")</mark></code>
-        <code>// '0x6fd43e7cffc31bb581d7421c8698e29aa2bd8e7186a394b85299908b4eb9b175'</code>
-        <code> </code>
-        <code><mark>Web3.utils.toWei('1', 'ether')</mark> // 1000000000000000000</code>
-        <code><mark>Web3.utils.toWei('1', 'gwei')</mark> // 1000000000</code>
-        <code> </code>
-        <code><mark>Web3.utils.padLeft('0x3456ff', 20);</mark> // '0x000000000000003456ff'</code>
-      </pre>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Connect wallet</h2>
-    </section>
-
-    <section class="slide">
-      <img class="cover h" src="pictures/connect-wallet.png" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover w" src="pictures/sing_in_buttons.png" alt="" />
-    </section>
-
-    <section class="slide">
-      <h2>Connect wallet (1)</h2>
-      <pre>
-        <code>&lt;script <mark>src=&quot;https://.../web3.min.js&quot;</mark>&gt;&lt;/script&gt;</code>
-        <code>&lt;input</code>
-        <code>  type=&quot;button&quot;</code>
-        <code>  value=&quot;Connect Wallet&quot;</code>
-        <code>  onclick=&quot;<mark>connect();</mark>&quot;</code>
-        <code>&gt;</code>
-      </pre>
-    </section>
-
-    <section class="slide">
-      <h2>Connect wallet (2)</h2>
-      <pre>
-        <code>async function connect() {</code>
-        <code>  if (!window.ethereum) return;</code>
-        <code>  <mark>await window.ethereum.request({ method: "eth_requestAccounts" });</mark></code>
-        <code>  window.web3 = new Web3(window.ethereum);</code>
-        <code>  console.log(`Wallet: ${account.givenProvider.selectedAddress}`);</code>
-        <code>}</code>
       </pre>
     </section>
 
@@ -688,7 +654,6 @@
           <code>    <mark>&lt;WagmiConfig config={wagmiConfig}&gt;</mark></code>
           <code>      &lt;HomePage /&gt;</code>
           <code>    <mark>&lt;/WagmiConfig&gt;</mark></code>
-          <code> </code>
           <code>    <mark>&lt;Web3Modal projectId={projectId} ethereumClient={ethereumClient} /&gt;</mark></code>
           <code>  &lt;/&gt;</code>
           <code>)</code>
@@ -797,7 +762,18 @@
     </section>
 
     <section class="slide">
+      <h2 class="shout">Демо</h2>
+    </section>
+
+    <section class="slide">
       <h2 class="shout brand">Деплой</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Hardhat</h2>
+      <pre>
+        <code>$ npx hardhat run --network %your-network% <mark>scripts/deploy.js</mark></code>
+      </pre>
     </section>
 
     <section class="slide clear">
@@ -817,6 +793,10 @@
       <img class="cover w" src="pictures/brave-deploy.webp" alt="" />
     </section>
 
+    <section class="slide">
+      <h2 class="shout">Демо</h2>
+    </section>
+
     <!-- Рецепт создания dApps -->
     <section class="slide">
       <h2 class="shout brand">Чеклист</h2>
@@ -831,7 +811,7 @@
     </section>
 
     <section class="slide" id="last-slide">
-      <h2>Спасибо за внимание!<br />Есть вопросы?</h2>
+      <h2>Вопросы?</h2>
 
       <ul>
         <li>👨 Алексей Авдеев</li>
@@ -849,14 +829,14 @@
       </ul>
 
       <div class="image-with-label">
-        <img src="pictures/qr2.jpeg" alt="qr-код" />
+        <img src="pictures/qr-code.gif" alt="qr-код" />
         <p>Оцените доклад</p>
       </div>
       <style>
         #last-slide .image-with-label {
           position: absolute;
-          right: 65px;
-          top: 165px;
+          right: 105px;
+          top: 105px;
         }
 
         #last-slide .image-with-label img {
