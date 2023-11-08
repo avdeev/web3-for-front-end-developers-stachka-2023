@@ -2,6 +2,7 @@
 
 - [Слайды Стачка 2023](https://alexey-avdeev.com/web3-for-front-end-developers-stachka-2023/)
 - [Доклад в программе Стачка 2023](https://nastachku.ru/web3-dlya-frontendera)
+- [Видео](https://www.youtube.com/watch?v=9I3SxhlUaTM)
 
 Мы знаем термин Web3 уже 9 лет. Мало кто не слышал о блокчейне или криптовалютах. Считается, что это новая эпоха развития Интернета, его третья версия.
 
